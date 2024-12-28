@@ -1,0 +1,24 @@
+// Function to check if the number is positive, negative, or zero
+function checkNumberSign(number) {
+  if (number > 0) {
+    console.log("The number is positive.");
+    alert("The number is positive.");
+  } else if (number < 0) {
+    console.log("The number is negative.");
+    alert("The number is negative.");
+  } else {
+    console.log("The number is zero.");
+    alert("The number is zero.");
+  }
+}
+
+// Prompt the user for a number
+let userInput = parseFloat(prompt("Enter a number:"));
+
+// Check if the input is a valid number
+if (isNaN(userInput)) {
+  alert("Please enter a valid number.");
+} else {
+  // Call the function to check if the number is positive, negative, or zero
+  checkNumberSign(userInput);
+}
